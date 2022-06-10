@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #232323;
+  color: #fff;
+  text-align: center;
+}
+
+div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .card {
+  transition: .5s;
+} */
+
+.m-cont {
+  width: 80%;
+  background-color: #696363;
+  padding: 0.5rem;
+  margin: auto;
+  border: 5px solid #000;
+  border-radius: 5px;
+}
+
+.m-cont__flex {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  background-color: #b3b3b3;
+  border: 5px solid #000;
+  border-radius: 5px;
+}
+
+.m-cont__flex__card {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  background-color: #456fef;
+  border: 3px solid #fff;
+  border-radius: 3px;
+}
+
+.m-cont__flex__card img {
+  width: 100%;
+  display: none;
+  transition: all 1.2s;
+}
+
+@keyframes card-founded {
+  0% {
+    transform: none;
+    border-color: #00c22a;
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+    border-color: #00c22a;
+  }
+  100% {
+    transform: none;
+    border-color: #00c22a;
+  }
+}
+
+/* .m-cont__flex__card img:hover {
+  animation-duration: 2s;
+  animation-name: image;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+
+/* curso dalto transofrm 8:48:00 
+
+@keyframes image {
+  0% {transform: scale(1, 1);}
+  100% {transform: scale(1.5, 3);}
+}
+*/
+
+.clicks-box {
+  margin: 2rem auto;
+  width: 40%;
+  padding: 1rem;
+  font-size: 2rem;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  background-color: #6800ca;
+  /* background-color: linear-gradient(red 30%, blue 40%); */
+}
+.clicks-box span {
+  display: block;
+}
+
+/* .clicks-box_clicks {
+  
+} */
+
+@keyframes card-not-founded {
+  0% {
+    border-color: #fff;
+    left: 0px;
+  }
+  30% {
+    left: 12px;
+  }
+  50% {
+    border-color: #ef0000;
+  }
+  70% {
+    left: -12px;
+  }
+  100% {
+    border-color: #fff;
+    left: 0px;
+  }
+}
+
+@keyframes clicks-box {
+  50%{
+    color: #f00;
+  }
+}
+
+#you-lose {
+  z-index: 1000;
+  position: absolute;
+  top: 25vh;
+  left: 32vw;
+  width: 35vw;
+  height: 20vh;
+  background-color: #ef0000;
+  color: #fff;
+  border: 5px solid #fff;
+  border-radius: 8px;
+  display: none;
+  text-align: center;
+  line-height: 5rem;
+}
+
+#you-win {
+  z-index: 1000;
+  position: absolute;
+  top: 25vh;
+  left: 32vw;
+  width: 35vw;
+  height: 20vh;
+  background-color: #00c22a;
+  color: #fff;
+  border: 5px solid #fff;
+  border-radius: 8px;
+  display: none;
+  text-align: center;
+  line-height: 5rem;
+}
+
+.foot {
+  background-color: #454545;
+  padding: 1rem;
+}
+
+i {
+  height: 40px;
+  width: 40px;
+  color: #fff;
+}
